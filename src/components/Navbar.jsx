@@ -49,7 +49,7 @@ const Navbar = () => {
   return (
     <nav>
       <div
-        className={`md:px-5 md:py-3 xl:py-5 xl:px-8 flex items-center shadow-xl shadow-[#f0fcfe] bg-white z-30`}
+        className={`p-3 md:px-5 md:py-3 xl:py-5 xl:px-8 flex items-center shadow-xl shadow-[#f0fcfe] bg-white z-30`}
       >
         <div className="basis-1/2">
           <Link to="/">

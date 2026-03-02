@@ -13,18 +13,18 @@ const Projects = () => {
         <div className="w-10 border-2 border-[#d701977b] rounded-full"></div>
       </div>
       <div className="w-[70%] mx-auto mt-10 text-center">
-        <p className="w-[60%] mx-auto mt-5 text-sm font-light text-[#011b3e]">
+        <p className="lg:w-[60%] mx-auto mt-5 text-sm font-light text-[#011b3e]">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae,
           veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Sint, vel!
         </p>
       </div>
       <div className="px-5">
-        <div className="w-full flex gap-5 flex-wrap justify-center mt-4">
+        <div className="w-full flex lg:flex-col gap-5 flex-wrap justify-center mt-4">
           {projectsData.map((project) => (
             <div
               key={project.id}
-              className="basis-[30%] p-2 bg-white rounded-sm border border-gray-300"
+              className="w-full lg:basis-[30%] p-2 bg-white rounded-sm border border-gray-300"
             >
               <div className="rounded-sm">
                 <div className="w-full h-48 relative">

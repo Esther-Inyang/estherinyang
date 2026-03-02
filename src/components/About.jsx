@@ -5,7 +5,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 const About = () => {
   return (
     <div>
-      <div className="w-[80%] mx-auto h-10 -mt-5 bg-white z-30 rounded-sm"></div>
+      <div className="w-[80%] mx-auto h-10 lg:-mt-5 bg-white z-30 rounded-sm"></div>
 
       <div className="flex gap-2 flex-col justify-center items-center">
         <h1 className="px-5 text-3xl font-extrabold text-[#011b3e]">
@@ -13,14 +13,14 @@ const About = () => {
         </h1>
         <div className="w-10 border-2 border-[#d701977b] rounded-full"></div>
       </div>
-      <div className="mt-10 flex gap-10 justify-center items-center">
-        <div className="basis-[50%] py-5 px-10">
-          <div className="w-full h-100 p-2 relative">
+      <div className="mt-10 flex flex-col lg:flex-row lg:gap-10 justify-center items-center">
+        <div className="basis-[50%] py-5 px-5 lg:px-10">
+          <div className="w-full h-80 lg:h-100 p-2 relative">
             <img src={aboutImg} alt="work station" className="w-full h-full" />
           </div>
         </div>
 
-        <div className="basis-1/2 flex flex-col justify-center items-center bg-white p-10">
+        <div className="basis-1/2 flex flex-col justify-center items-center bg-white px-6 lg:p-10">
           <div>
             <div className="text-3xl font-bold text-[#011b3e]">
               <h2>I am Professional</h2>

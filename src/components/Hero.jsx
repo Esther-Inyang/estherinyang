@@ -10,15 +10,15 @@ const Hero = () => {
     <div className="pb-24 bg-linear-to-r from-[#f3f6f9] via-[#e8e4f7] to-[#fae8ea] z-30">
       <Navbar />
 
-      <div className="mt-20 flex justify-center">
-        <div className="basis-[65%] pr-10">
-          <div className="bg-white pl-10 py-10 rounded-md">
+      <div className="mt-10 px-5 lg:mt-20 flex flex-col lg:flex-row justify-center">
+        <div className="lg:basis-[65%] lg:pr-10">
+          <div className="bg-white px-5 lg:pl-10 py-10 rounded-md">
             <div className="text-4xl font-extrabold text-[#011b3e]">
               <h1>Hello, I'm</h1>
               <h1>Esther Inyang</h1>
             </div>
             <div>
-              <p className="w-[80%] py-10 text-base font-light">
+              <p className="lg:w-[80%] py-10 text-base font-light">
                 A frontend developer with expertise in React, Next.js, and
                 Tailwind CSS. I build responsive and user-friendly web
                 applications with clean, maintainable code. My passion lies in
@@ -28,13 +28,13 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="basis-[35%] mt-20 -ml-32 w-100 h-100 px-5 py-5 rounded-t-sm rounded-bl-xl bg-white flex gap-4 items-center shadow-xl shadow-[#f0fcfe]">
+        <div className="lg:basis-[35%] lg:mt-20 lg:-ml-32 lg:w-100 h-100 px-5 py-5 rounded-t-sm rounded-bl-xl bg-white flex gap-4 items-center shadow-xl shadow-[#f0fcfe]">
           <div className="basis-[85%] p-2 bg-white relative shadow-sm shadow-[#f0fcfe] rounded-sm">
             <div className="h-80">
               <img
                 src={profileImg}
                 alt="Profile picture"
-                className="w-full h-full"
+                className="w-full h-full rounded-md"
               />
             </div>
             <div className="w-fit mt-3">
