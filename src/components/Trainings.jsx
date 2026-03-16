@@ -6,37 +6,36 @@ const Training = () => {
   return (
     <div className="bg-gray-100">
       <div className="w-[80%] mx-auto h-10 -mt-10 bg-white z-40 rounded-sm"></div>
-      <div className="flex gap-5 justify-center items-center py-20">
-        <div className="basis-[40%] flex flex-col justify-center items-center bg-white p-10">
-          <div>
-            <h1 className="text-2xl font-extrabold text-[#011b3e]">
-              Trainings & Certifications
-            </h1>
-            <div className="w-full">
-              <ul className="text-base font-light flex flex-col gap-3 py-7">
-                <li>GitHub Copilot Certification Program (Microsoft)</li>
-                <li>Google UX Design Professional Certificate</li>
-                <li>Andela React Learning Program</li>
-                <li>Google Africa Developer Scholarship</li>
-              </ul>
-            </div>
+      <div className="lg:flex gap-5 justify-center items-center py-20">
+        <div className="basis-[40%] bg-white pt-8 pb-2 px-7 md:p-10">
+          <h1 className="text-3xl lg:text-2xl font-extrabold text-[#011b3e]">
+            Trainings & Certifications
+          </h1>
+          <div className="w-full pl-5">
+            <ul className="md:text-lg lg:text-base font-light flex flex-col gap-3 py-7 list-disc">
+              <li>GitHub Copilot Certification Program (Microsoft)</li>
+              <li>Google UX Design Professional Certificate</li>
+              <li>Andela React Learning Program (META)</li>
+              <li>Google Africa Developer Scholarship</li>
+            </ul>
           </div>
         </div>
-        <div className="basis-[50%] bg-[#f6fdff] py-5 px-10">
-          <div className="flex items-center gap-5">
-            <div className="w-full h-40 p-2 relative">
+
+        <div className="lg:basis-[50%] bg-[#f6fdff] py-5 md:px-10">
+          <div className="flex flex-col lg:flex-row items-center gap-5">
+            <div className="w-[85%] md:w-[80%] mx-auto lg:w-full h-64 lg:h-40 p-2 relative">
               <img
                 src={copilotCert}
                 alt="certificate"
                 className="w-full h-full"
               />
             </div>
-            <div className="w-full h-40 p-2 relative">
+            <div className="w-[85%] md:w-[80%] mx-auto lg:w-full h-64 lg:h-40 p-2 relative">
               <img src={uxCert} alt="certificate" className="w-full h-full" />
             </div>
           </div>
           <div className="mt-5 flex justify-center">
-            <div className="w-1/2 h-40 p-2 relative">
+            <div className="w-[85%] md:w-[80%] mx-auto h-64 lg:w-1/2 lg:h-40 p-2 relative">
               <img
                 src={reactCert}
                 alt="certificate"

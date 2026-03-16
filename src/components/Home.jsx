@@ -6,7 +6,7 @@ import Training from "./Trainings";
 import Blog from "./Blog";
 import Idea from "./Idea";
 // import Contact from "./Contact";
-import Quotes from "./Quotes";
+// import Quotes from "./Quotes";
 import HappyClients from "./HappyClients";
 import Footer from "./Footer";
 
@@ -20,7 +20,7 @@ const Home = () => {
       <Training />
       <Blog />
       <Idea />
-      <Quotes />
+      {/* <Quotes /> */}
       <HappyClients />
       {/* <Contact /> */}
       <Footer />

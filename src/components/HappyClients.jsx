@@ -20,17 +20,21 @@ const HappyClients = () => {
   ];
 
   return (
-    <div className="w-full py-10 px-10 text-black">
-      <div className="mt-10 flex gap-2 flex-col justify-center items-center">
-        <h1 className="px-5 text-3xl font-extrabold text-[#011b3e]">
+    <div className="w-full py-10 px-5 lg:px-10 text-black mt-10 xl:mt-16">
+      <div className="lg:mt-10 flex gap-2 flex-col justify-center items-center">
+        <h1 className="px-5 text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-extrabold text-[#011b3e]">
           Happy Clients
         </h1>
         <div className="w-10 border-2 border-[#d701977b] rounded-full"></div>
       </div>
-      <div className="mt-3 flex gap-10 flex-wrap items-center justify-center">
+      <div className="mt-3 flex gap-4 lg:gap-10 flex-wrap items-center justify-center">
         {companies.map((company) => (
           <div key={company.img}>
-            <img src={company.img} alt={company.img} className="w-36 " />
+            <img
+              src={company.img}
+              alt={company.img}
+              className="w-16 md:w-28 lg:w-36"
+            />
           </div>
         ))}
       </div>
