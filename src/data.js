@@ -1,4 +1,7 @@
 import project1 from "./assets/project1.jpg";
+import blog1 from "./assets/blog1.WEBP";
+import blog2 from "./assets/blog2.WEBP";
+import blog3 from "./assets/blog2.WEBP";
 import proodoscare from "./assets/projects/proodoscare.png";
 import homvest from "./assets/projects/homvest.png";
 import iklass from "./assets/projects/iklass.png";
@@ -125,26 +128,29 @@ export const allProjectsData = [
 export const blogData = [
   {
     id: 1,
-    title: "Title",
+    title: "A Note to you, Tech Newbie!",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, vel! lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, vel! ",
-    image: project1,
-    websiteLink: "#",
+      "A note to Tech Newbie who are new to the world of technology and feeling overwhelmed, encouraging you to not worry, you're not alone. ",
+    image: blog1,
+    websiteLink:
+      "https://medium.com/@esther_inyang/a-note-to-you-tech-newbie-a344dfe3c1ff",
   },
   {
     id: 2,
-    title: "Title",
+    title: "Don’t save, spend it all.",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, vel!",
-    image: project1,
-    websiteLink: "#",
+      "Talks about the importance of saving and investing, and how to find the right balance between spending and saving. It also emphasizes the importance of financial literacy.",
+    image: blog2,
+    websiteLink:
+      "https://medium.com/@esther_inyang/dont-save-spend-it-all-9dc370ebe607",
   },
   {
     id: 3,
-    title: "Title",
+    title: "Dear Damsel, you are here now!",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, vel!",
-    image: project1,
-    websiteLink: "#",
+      "A letter to a lonely tired soul who is struggling to find their way in the world, reminding them that they are not alone and that they have the strength to overcome any obstacle.",
+    image: blog3,
+    websiteLink:
+      "https://medium.com/@esther_inyang/dear-damsel-you-are-here-now-2313d1565b4d",
   },
 ];

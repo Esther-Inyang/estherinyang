@@ -37,20 +37,22 @@ const Blog = () => {
                   />
                 </div>
                 <div className="mt-3">
-                  <h2 className="text-xl font-extrabold text-[#011b3e]">
+                  <h2 className="text-xl font-extrabold text-[#011b3e] leading-tight">
                     {project.title}
                   </h2>
                   <p className="mt-3 mb-2 text-xs xl:text-sm font-light text-[#011b3e]">
                     {project.description}
                   </p>
                 </div>
-                <div className="w-fit mt-auto">
-                  <Link
-                    to={project.websiteLink}
+                <div className="w-fit mt-auto mb-1">
+                  <a
+                    href={project.websiteLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="font-medium py-1.5 lg:py-2 rounded-sm text-pink-500 transition-colors duration-300 ease-linear hover:text-blue-400"
                   >
                     <span className="text-[13px] xl:text-sm">Read post..</span>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
