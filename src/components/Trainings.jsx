@@ -1,5 +1,5 @@
 import reactCert from "../assets/react-cert.jpg";
-import copilotCert from "../assets/copilotcert.png";
+import copilotCert from "../assets/copilotcert.jpg";
 import uxCert from "../assets/ux-cert.jpeg";
 
 const Training = () => {
