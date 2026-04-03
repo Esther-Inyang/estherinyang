@@ -1,5 +1,3 @@
-import React from "react";
-
 const Quotes = () => {
   return (
     <div className="flex justify-center pt-10 pb-14 lg:pb-20 bg-[#d701970e]">

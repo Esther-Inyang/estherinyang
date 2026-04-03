@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa";
-import { RxGithubLogo } from "react-icons/rx";
 import { blogData } from "../data";
 
 const Blog = () => {

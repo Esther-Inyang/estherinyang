@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import aboutImg from "../assets/about.jpg";
 import { MdOutlineFileDownload } from "react-icons/md";
 
