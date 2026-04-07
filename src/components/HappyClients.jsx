@@ -1,35 +1,58 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import homvest from "../assets/homvest.png";
 import iklasstutors from "../assets/iklasstutors.png";
 import aquasolutions from "../assets/aquasolutions.png";
 import proodoscare from "../assets/proodoscare.png";
 
 const HappyClients = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease-out",
+      once: true,
+    });
+  }, []);
+
   const companies = [
     {
+      id: 1,
       img: aquasolutions,
     },
     {
+      id: 2,
       img: homvest,
     },
     {
+      id: 3,
       img: iklasstutors,
     },
     {
+      id: 4,
       img: proodoscare,
     },
   ];
 
   return (
-    <div className="w-full py-10 px-5 lg:px-10 text-black mt-10 xl:mt-16">
+    <div className="w-full py-10 px-5 lg:px-10 text-black mt-10 xl:mt-16 overflow-hidden">
       <div className="lg:mt-10 flex gap-2 flex-col justify-center items-center">
-        <h1 className="px-5 text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-extrabold text-[#011b3e]">
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="300"
+          className="px-5 text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-extrabold text-[#011b3e]"
+        >
           Happy Clients
         </h1>
         <div className="w-10 border-2 border-[#d701977b] rounded-full"></div>
       </div>
       <div className="mt-3 flex gap-4 lg:gap-10 flex-wrap items-center justify-center">
         {companies.map((company) => (
-          <div key={company.img}>
+          <div
+            key={company.id}
+            data-aos="fade-up"
+            data-aos-delay={company.id * 100}
+          >
             <img
               src={company.img}
               alt={company.img}

@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/js.png";
@@ -8,45 +11,65 @@ import redux from "../assets/redux.png";
 import next from "../assets/next.png";
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease-out",
+      once: true,
+    });
+  }, []);
+
   const skills = [
     {
+      id: 1,
       name: "HTML5",
       img: html,
     },
     {
+      id: 2,
       name: "CSS3",
       img: css,
     },
     {
+      id: 3,
       name: "JavaScript",
       img: js,
     },
     {
+      id: 4,
       name: "React",
       img: react,
     },
     {
+      id: 5,
       name: "Tailwind CSS",
       img: tailwind,
     },
     {
+      id: 6,
       name: "Vite",
       img: vite,
     },
     {
+      id: 7,
       name: "Redux Toolkit",
       img: redux,
     },
     {
+      id: 8,
       name: "Next.js",
       img: next,
     },
   ];
 
   return (
-    <div className="relative w-full pt-12 pb-5 lg:pb-14 px-10 text-black bg-[#d701970e]">
+    <div className="relative w-full pt-12 pb-5 lg:pb-14 px-10 text-black bg-[#d701970e] overflow-hidden">
       <div className="md:mt-10 flex gap-2 flex-col justify-center items-center">
-        <h1 className="px-5 text-3xl lg:text-3xl xl:text-4xl font-extrabold text-[#011b3e]">
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="300"
+          className="px-5 text-3xl lg:text-3xl xl:text-4xl font-extrabold text-[#011b3e]"
+        >
           Skills
         </h1>
         <div className="w-10 border-2 border-[#d701977b] rounded-full"></div>
@@ -54,7 +77,9 @@ const Skills = () => {
       <div className="flex gap-5 xl:gap-10 flex-wrap justify-center mt-10 xl:mt-16">
         {skills.map((skill) => (
           <div
-            key={skill.name}
+            key={skill.id}
+            data-aos="fade-up"
+            data-aos-delay={skill.id * 100}
             className="flex flex-col items-center gap-2 xl:gap-3"
           >
             <img

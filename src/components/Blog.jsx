@@ -1,11 +1,23 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { blogData } from "../data";
 
 const Blog = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease-out",
+      once: true,
+    });
+  }, []);
   return (
-    <div className="px-2 md:px-0 mt-14 lg:mt-20 pb-16 md:pb-24 bg-white z-30">
+    <div className="px-2 md:px-0 mt-14 lg:mt-20 pb-16 md:pb-24 bg-white z-30 overflow-hidden">
       <div className="mt-10 flex gap-2 flex-col justify-center items-center">
         <h1
           id="blog"
+          data-aos="fade-up"
+          data-aos-delay="300"
           className="px-5 text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-extrabold text-[#011b3e]"
         >
           Blog
@@ -13,7 +25,11 @@ const Blog = () => {
         <div className="w-10 border-2 border-[#d701977b] rounded-full"></div>
       </div>
       <div className="md:w-[70%] mx-auto mt-10 text-center">
-        <p className="w-[90%] md:w-[70%] xl:w-[80%] mx-auto mt-5 text-sm md:text-base xl:text-xl font-light text-[#011b3e]">
+        <p
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          className="w-[90%] md:w-[70%] xl:w-[80%] mx-auto mt-5 text-sm md:text-base xl:text-xl font-light text-[#011b3e]"
+        >
           I write about life, lessons, and the random things on my mind,
           including the occasional piece for anyone figuring out where to start.
         </p>
@@ -23,6 +39,8 @@ const Blog = () => {
           {blogData.map((project) => (
             <div
               key={project.id}
+              data-aos="fade-up"
+              data-aos-delay={project.id * 100}
               className="w-full p-4 lg:p-2 xl:p-3 bg-white rounded-sm border border-gray-300"
             >
               <div className="rounded-sm flex flex-col h-full">
