@@ -17,7 +17,7 @@ export const projectsData = [
       "Proodoscare is a safe, supportive space where children with special needs can grow and thrive. It offers gentle, personalized support through ABA, speech, and occupational therapy. Where children struggling with communication, speech, sensory needs, or behaviors that make daily life tough, can get the right help. ",
     image: proodoscare,
     technologies: ["React", "Next.js", "Tailwind", "JavaScript"],
-    websiteLink: "https://proodoscare.vercel.app/",
+    websiteLink: "www.proodoscare.com",
     githubLink: "https://github.com/Esther-Inyang/",
   },
   {
